@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keystroke_dynamics.main_gui.Main_start_guiController">
+    <stylesheets>
+        <URL value="@main_start_gui.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="169.0" fitWidth="303.0" layoutX="155.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="159.0" layoutY="153.0" prefHeight="47.0" prefWidth="292.0" text="Keystroke Dynamics" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <VBox layoutX="173.0" layoutY="209.0" prefHeight="248.0" prefWidth="255.0">
+         <children>
+            <Button fx:id="btn_train_start" mnemonicParsing="false" prefHeight="25.0" prefWidth="258.0" text="Train">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_test_start" mnemonicParsing="false" prefHeight="25.0" prefWidth="257.0" text="Test">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_exit" mnemonicParsing="false" prefHeight="25.0" prefWidth="259.0" text="Exit">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

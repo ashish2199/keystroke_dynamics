@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="590.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keystroke_dynamics.train_gui.FXMLController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="btn_clear" layoutX="440.0" layoutY="146.0" mnemonicParsing="false" text="Clear Everything" />
+      <Label layoutX="423.0" layoutY="108.0" prefHeight="17.0" prefWidth="27.0" text="Tries" />
+      <Label fx:id="lbl_tries" layoutX="450.0" layoutY="99.0" prefHeight="35.0" prefWidth="41.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="108.0" text="Text:" />
+      <Label layoutX="190.0" layoutY="20.0" text="Keystroke Dynamics">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_area_records" layoutX="16.0" layoutY="291.0" prefHeight="167.0" prefWidth="558.0" />
+      <TextField fx:id="txt_username" layoutX="156.0" layoutY="146.0" prefHeight="25.0" prefWidth="71.0" />
+      <Button fx:id="btn_generate_dataset" layoutX="230.0" layoutY="252.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="131.0" text="Generate DATA" />
+      <Button fx:id="btn_next" layoutX="255.0" layoutY="146.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="131.0" text="Next" />
+      <TextField fx:id="txt_input" layoutX="156.0" layoutY="104.0" prefHeight="25.0" prefWidth="229.0" />
+      <Label layoutX="113.0" layoutY="150.0" text="User" />
+      <Label fx:id="lbl_error" layoutX="17.0" layoutY="189.0" prefHeight="35.0" prefWidth="558.0" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_write" layoutX="229.0" layoutY="465.0" mnemonicParsing="false" text="Write to File" />
+      <Button fx:id="btn_back" layoutX="16.0" layoutY="465.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>
